@@ -548,7 +548,7 @@ END;
 select null from dual where 1=0
 "
 
-	clone_script=$BASE_PATH/scripts/rmanclone_${db}_`date '+%Y%m%d'`.sh
+	clone_script=$SCRIPTDIR/rmanclone_${db}_`date '+%Y%m%d'`.sh
 	cat <<CLONESCRIPT > $clone_script
 #!/bin/sh
 
